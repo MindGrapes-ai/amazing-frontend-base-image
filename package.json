@@ -1,0 +1,71 @@
+{
+  "name": "coursehub_next_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "ENVIRONMENT=dev next dev",
+    "build:dev": "ENVIRONMENT=dev next build",
+    "start:dev": "ENVIRONMENT=dev next start",
+    "build:qa": "ENVIRONMENT=qa next build",
+    "start:qa": "ENVIRONMENT=qa next start",
+    "build:prod": "ENVIRONMENT=prod next build",
+    "start:prod": "ENVIRONMENT=prod next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@heroui/react": "^2.6.14",
+    "@next/env": "^15.1.2",
+    "@radix-ui/react-label": "^2.1.1",
+    "@radix-ui/react-radio-group": "^1.2.2",
+    "@radix-ui/react-scroll-area": "^1.2.2",
+    "@radix-ui/react-slot": "^1.1.1",
+    "axios": "^1.7.9",
+    "babel-plugin-react-native-web": "^0.19.13",
+    "bootstrap": "^5.3.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
+    "lucide-react": "^0.469.0",
+    "motion": "^11.16.0",
+    "next": "^15.1.3",
+    "next-themes": "^0.4.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-native-web": "^0.19.13",
+    "react-resizable": "^3.0.5",
+    "slugify": "^1.6.6",
+    "swr": "^2.2.5",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.3",
+    "@eslint/eslintrc": "^3",
+    "@shadcn/ui": "^0.0.4",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-onboarding": "^8.4.7",
+    "@storybook/blocks": "^8.4.7",
+    "@storybook/nextjs": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/test": "^8.4.7",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.0",
+    "eslint-plugin-storybook": "^0.11.1",
+    "postcss": "^8.4.49",
+    "storybook": "^8.4.7",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}
