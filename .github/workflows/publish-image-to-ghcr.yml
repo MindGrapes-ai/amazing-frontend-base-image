@@ -41,10 +41,9 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       # Pull an existing image
-      # Repo: https://github.com/marketplace/actions/checkout
       - name: Pull existing image
         run: |
-          docker pull ghcr.io/mindgrapes-ai/amazing-backend-base-image:main || true
+          docker pull ghcr.io/${{ github.repository }}:main || true
 
       # Setup Docker buildx
 
@@ -54,7 +53,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5.7.0
         with:
-          images: ghcr.io/mindgrapes-ai/amazing-backend-base-image
+          images: ghcr.io/${{ github.repository }}
           tags: |
             type=sha,format=short,prefix=,suffix=
             type=sha,format=long,prefix=,suffix=
