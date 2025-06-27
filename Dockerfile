@@ -8,7 +8,7 @@ RUN apk add --no-cache bash curl
 WORKDIR /coursehub_container/coursehub_next_frontend
 
 # Copy only package.json and package-lock.json to leverage caching
-COPY package.json ./
+COPY package.json package-lock.json ./
 
 # Install project dependencies with verbose logs
 RUN npm ci --only=production --loglevel=verbose
